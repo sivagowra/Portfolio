@@ -13,8 +13,6 @@
             background-image: linear-gradient(to left, hsl(222, 71%, 77%), rgba(245, 248, 255, 0.8), rgba(177, 192, 225, 0));
 
         }
-
-
         .hero-section {
             display: flex;
             flex-direction: column;
@@ -31,7 +29,7 @@
             font-weight: bold;
         }
         .desc {
-            font-size: 18px;
+            font-size: 25px;
             max-width: 600px;
             margin: 10px auto;
         }
@@ -39,7 +37,7 @@
             padding: 10px 20px;
             font-size: 18px;
             font-weight: bold;
-            background-color: #ff5733;
+            background-color: #1d1b1b;
             color: white;
             border: none;
             border-radius: 5px;
@@ -47,7 +45,7 @@
             text-decoration: none;
         }
         .resume-btn:hover {
-            background-color: #e04e2c;
+            background-color: hsl(0, 92%, 48%);
         }
         .about-text {
             font-size: 36px;
@@ -78,61 +76,148 @@
             height: 60px;
             width: 60px;
         }
+        .navbar-nav .nav-item .nav-link:hover {
+         color: hsl(0, 92%, 48%) !important; 
+         }
+         .card.bg-dark:hover {
+    background-color: white !important; /* Change background to white on hover */
+    color: black !important; /* Change text color to black on hover */
+}
+
+.card.bg-dark:hover .card-title {
+    color: hsl(0, 92%, 48%) !important; /* Change Portfolio Website title to red on hover */
+}
+.skill-li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.skill-li:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    background-color: white; 
+}
+.company-section {
+    text-align: center;
+    color: #c0392b;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px; 
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px; 
+    gap: 6px; 
+}
+
+.line {
+    width: 60px;
+    height: 2px;
+    background-color: #c0392b;
+}
+
+.arrow {
+    font-size: 20px;
+    color: #c0392b;
+}
+.f{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+
     </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top bg-dark" >
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top " style="font-family:Verdana; background-color: #ffffff;" >
         <div class="container" >
             <a class="navbar-brand" href="#Home">
-                <h1>P<span style="color: #f5600a;">ortfolio</span></h1>
+                <h1 style="color: hsl(0, 92%, 48%);">P<span style="color: #1d1b1b;">ortfolio</span></h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-            style="border-color: #ff5733;">
-            <span class="navbar-toggler-icon" style="background-color: #ff5733; border-radius: 5px;"></span>
+            style="border-color: #1d1b1b;">
+            <span class="navbar-toggler-icon" style="background-color: #1d1b1b; border-radius: 5px;"></span>
         </button>
         
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item" ><a class="nav-link"style="color: #cd5815;" href="#Home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" style="color: #f05d08;" href="#About">About</a></li>
-                    <li class="nav-item"><a class="nav-link" style="color: #f6610b;" href="#Projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" style="color: #e25808;" href="#Contact">Contact</a></li>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto" style="font-size:larger;">
+                    <li class="nav-item"><a class="nav-link" style="color: #0f0e0e;" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: #0f0e0e;" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: #0f0e0e;" href="#Projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: #0f0e0e;" href="#Contact">Contact</a></li>
                 </ul>
+                
             </div>
         </div>
     </nav>
+    <br>
 
     <!-- Hero Section -->
     <div id="Home" class="section hero-section" 
-    style="color: #d63717; height: 700px; 
-background-image: linear-gradient(to left, hsl(240, 48%, 67%), rgba(116, 143, 206, 0.8), rgba(70, 100, 170, 0.866));" >  
-    <h1 class="">Hello, <span style="color: #ffffff;">Developers</span></h1>
-    <h1 class="name"><span class="name-box">I'm</span> Sivannarayana Gowra</h1>
-    <p class="desc">UI Developer. And, I'm ready to make the leap and continue refining my skills with the right company.</p>
+    style="color: #1d1b1b; height: 850px; background-image: url('bg.jpg'); 
+           background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <h1 style="color: #ffffff;" >Hello, <span >Developers</span></h1>
+    <h1 class="name"  style="color: hwb(0 95% 4%);"><span class="name-box">I'm</span> Sivannarayana Gowra</h1>
+    <p class="desc"  style="color: hwb(0 93% 6%);">UI Developer. And, I'm ready to make the leap and continue refining my skills with the right company.</p>
     
     <!-- Resume Button -->
     <a href="SivannarayanaGowra951.pdf" download class="resume-btn">Download Resume</a>
+    <p class="" style="margin:10px;"  >
+        <a href="https://www.linkedin.com/in/sivannarayana-gowra-b17798222/" target="_blank" >
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="50" style=" background-color: white !important;margin:5px; gap: 20px; ">
+        </a>
+        
+        <a href="mailto:gowrasiva95@gmail.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="50" style=" background-color: white !important; margin:5px; gap: 20px;">
+        </a>
+        
+        <a href="https://github.com/sivagowra" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="50" style=" background-color: white !important;margin:5px; gap: 20px;">
+        </a>
+        
+    </p>
 </div>
 
 
     <div id="About" class="section" style="background-image: linear-gradient(to left, hsl(222, 71%, 77%), rgba(245, 248, 255, 0.8), rgba(245, 248, 255, 0)); padding-top: 40px;;">
-        <h1 class="about-text">About Me</h1>
-        <div class="about-me">
-            <p>I specialize in quickly learning new technologies and developing efficient web applications. With expertise in <b>Python, JavaScript, TypeScript, Vue.js, HTML, Tailwind CSS, Bootstrap</b>, and <b>UI development</b>, I create <b>responsive and user-friendly</b> interfaces.</p>
+        <h1 class="about-text">
+            <div class="company-section">
+                <h2>ABOUT ME</h2>
+                <div class="divider">
+                    <span class="line"></span>
+                    <span class="arrow">&#x25BC;</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </h1>
+        <hr>
+        <div class="about-me  container mt-4">
+            <div class="container mt-4 row justify-content-center" >
+            <p class="f">I specialize in quickly learning new technologies and developing efficient web applications. With expertise in Python, JavaScript, TypeScript, Vue.js, HTML, Tailwind CSS, Bootstrap, and UI development, I create responsive and user-friendly interfaces.</p>
             
-            <p><strong>Education:</strong> B.Tech in Computer Science Engineering, Kallam Haranadhareddy Institute of Technology, Guntur.</p>
+            <p ><strong>Education:</strong><br><span  class="f"> B.Tech in Computer Science Engineering, Kallam Haranadhareddy Institute of Technology, Guntur.</span></p>
     
             <p><strong>Work Experience:</strong></p>
             <p><strong>Software Developer | Finse Technologies Pvt Ltd (Oct 2023 - Feb 2025)</strong></p>
-            <ul>
-                <li>Developed responsive, visually appealing web pages using <b>HTML, CSS,Python,Tailwind CSS, JavaScript, and Vue.js.</b></li>
-                <li>Ensured smooth <b>cross-browser and cross-device compatibility</b>.</li>
-                <li>Optimized website <b>performance, loading speed, and user experience</b>.</li>
-                <li>Integrated <b>backend APIs</b> for seamless functionality.</li>
-                <li>Identified and fixed <b>UI/UX issues</b> for a bug-free experience.</li>
+            <ul  class="f">
+                <li>Developed responsive, visually appealing web pages using HTML, CSS,Python,Tailwind CSS, JavaScript, and Vue.js.</li>
+                <li>Ensured smooth cross-browser and cross-device compatibility.</li>
+                <li>Optimized website performance, loading speed, and user experience.</li>
+                <li>Integrated backend APIs for seamless functionality.</li>
+                <li>Identified and fixed UI/UX issues for a bug-free experience.</li>
             </ul>
     
             <p><strong>Technical Skills:</strong></p>
@@ -152,7 +237,7 @@ background-image: linear-gradient(to left, hsl(240, 48%, 67%), rgba(116, 143, 20
                 <li class="skill-li">
                     <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" class="skill-icon">
                     <p class="skill-name">JavaScript</p>
-                </li>
+                </li><br>
                 <li class="skill-li">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" class="skill-icon">
                     <p class="skill-name">Vue.js</p>
@@ -171,30 +256,84 @@ background-image: linear-gradient(to left, hsl(240, 48%, 67%), rgba(116, 143, 20
                 </li>
             </ul>
         </div>
+        </div>
     </div>
     
   <!-- Projects Section -->
-  <div class="Projects" id="Projects" style="background-image: linear-gradient(to left, hsl(222, 71%, 77%), rgba(245, 248, 255, 0.8), rgba(245, 248, 255, 0)); padding-top: 40px;">
+  <div >
     <!-- <h1 class="about-text">Projects</h1> -->
     <div class="container mt-4">
         <div class="row justify-content-center">
             <!-- First Project -->
-          <div class="Projects" id="Projects" style="background-image: linear-gradient(to left, hsl(222, 71%, 77%), rgba(245, 248, 255, 0.8), rgba(245, 248, 255, 0)); padding-top: 40px;">
-    <h1 class="about-text"><u>Projects</u></h1>
+          <div class="Projects" id="Projects" >
+    <h1 class="about-text"><div class="company-section">
+        <h2>PROJECTS</h2>
+        <div class="divider">
+            <span class="line"></span>
+            <span class="arrow">&#x25BC;</span>
+            <span class="line"></span>
+        </div>
+    </div></h1>
+    <hr>
+
     <p style="height: 30px;"></p>
+    <div  class="section" >
+        <div class="about-me">
+            <h3 class="card-title">ROW Software - AI-Powered Accounting & Billing</h3>
+            <br>
+            <p class="card-text f">
+                ROW Software is an AI-driven accounting and billing solution designed to automate financial operations in businesses. It streamlines purchase and sales processes while integrating tax compliance features.
+            </p>
+            
+            <p><strong>Our Vision:</strong></p>
+            <p  class="f">To simplify business operations by significantly reducing manual data entry, ensuring efficiency, accuracy, and time savings.</p>
+
+            <p><strong>Key Features:</strong></p>
+            <ul  class="f">
+                <li><strong>Automatic Entry of Purchase Bills:</strong> AI-based system extracts invoice details from email/PDFs.</li>
+                <li><strong>User-Friendly Mobile App:</strong> Manage finances, inventory, and sales in real time.</li>
+                <li><strong>GSTR-1 Filing & GSTR-2B Reconciliation:</strong> Simplifies tax filing and compliance.</li>
+                <li><strong>E-Way Bill & E-Invoice with Single Click:</strong> Automated document generation.</li>
+                <li><strong>Custom Print Templates:</strong> Personalized invoicing for business needs.</li>
+                <li><strong>WhatsApp & Email Integration:</strong> Send invoices and notifications effortlessly.</li>
+                <li><strong>Audit Log & Admin Control:</strong> Track all activities and maintain security.</li>
+            </ul>
+    
+            <p  ><strong>Technologies Used:</strong></p>
+            <ul class="skills-icons"  >
+                <li class="skill-li">
+                    <img src="https://cdn-icons-png.flaticon.com/128/174/174854.png" class="skill-icon">
+                    <p class="skill-name">HTML5</p>
+                </li>
+                <li class="skill-li">
+                    <img src="https://th.bing.com/th/id/OIP.yMEsQ5pCVMp4mARXDdgLnwHaHa?rs=1&amp;pid=ImgDetMain" class="skill-icon" style="background-color: black;">
+                    <p class="skill-name">Tailwind CSS</p>
+                </li>
+                <li class="skill-li">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" class="skill-icon">
+                    <p class="skill-name">Vue.js</p>
+                </li>
+              <li class="skill-li">
+                   <img src="https://w7.pngwing.com/pngs/595/864/png-transparent-typescript-original-logo-icon.png" alt="Mecanografiado, original, logo, icono, png | PNGWing" class="skill-icon">
+                   <p class="skill-name">TypeScript</p>
+             </li>
+            </ul>
+            <p><strong>Duration:</strong> 11 Months</p>
+        </div>
+    </div>
     <div class="container mt-4">
         <div class="row justify-content-center">
             <!-- First Project Image -->
-            <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+            <div class="col-md-8 col-lg-6 d-flex justify-content-">
                 <div class="">
-                    <img src="Desktop.jpg" class="card-img-top img-fluid w-100 h-full" alt="Portfolio Project" style="object-fit: cover;">
+                    <img src="Desktop.png" class="card-img-top img-fluid w-100 h-full" alt="Portfolio Project" style="object-fit: cover;">
                 </div>
             </div>
 
             <!-- Second Project Image -->
             <div class="col-md-4 col-lg-2 d-flex justify-content-center">
-                <div class="card">
-                    <img src="mobile.jpeg" class="card-img-top img-fluid w-auto h-auto" alt="Portfolio Project" style="object-fit: cover;">
+                <div class="">
+                    <img src="mobile.png" class="card-img-top img-fluid w-100 h-100" alt="Portfolio Project" style="object-fit: cover;">
                 </div>
             </div>
 
@@ -203,71 +342,38 @@ background-image: linear-gradient(to left, hsl(240, 48%, 67%), rgba(116, 143, 20
                 <div class="card bg-dark text-white p-3">
                     <div class="text-center">
                         <h5 class="card-title">Portfolio Website</h5>
-                        <p class="card-text" style="text-align: left;">Currently you are viewing this. In this portfolio i was mentioned the Skills and Achievements I have owned. This is a Responsive Design, It will automatically adjust the interface based on the screen sizes. Using Github pages to deploy website
-                            A personal portfolio website showcasing my skills. Built using HTML, CSS, Bootstrap, and JavaScript.</p>
+                        <p class="card-text f" style="text-align: left;" >
+                            Currently you are viewing this. In this portfolio, I have mentioned the skills and achievements I have owned. 
+                            This is a responsive design that automatically adjusts the interface based on screen sizes. 
+                            Using GitHub Pages to deploy the website.
+                            A personal portfolio website showcasing my skills. Built using HTML, CSS, Bootstrap, and JavaScript.
+                        </p>
                         <a href="https://sivagowra.github.io/Portfolio/Index.html" target="_blank" class="resume-btn">View Project</a>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </div>
 
-
+<p style="height: 40px;"></p>
 
         <!-- ROW Software (AI-Powered Accounting & Billing Software) -->
-        <div class="row mt-5 card" >
-            <div class="col-md-12 " >
-                <div class=" p-3" style="text-align: left;">
-                    <div class=" text-left " style="color: #1a1918;">
-                        <h3 class="card-title">ROW Software - AI-Powered Accounting & Billing</h3>
-                        <p class="card-text">
-                            <b>ROW Software</b> is an <b>AI-driven accounting and billing solution</b> designed to automate financial operations in businesses. It streamlines purchase and sales processes while integrating tax compliance features.
-                        </p>
-                        
-                        <p><strong>Our Vision:</strong></p>
-                        <p>To simplify business operations by significantly reducing manual data entry, ensuring efficiency, accuracy, and time savings.</p>
-
-                        <p><strong>Key Features:</strong></p>
-                        <ul>
-                            <li><strong>Automatic Entry of Purchase Bills:</strong> AI-based system extracts invoice details from email/PDFs.</li>
-                            <li><strong>User-Friendly Mobile App:</strong> Manage finances, inventory, and sales in real time.</li>
-                            <li><strong>GSTR-1 Filing & GSTR-2B Reconciliation:</strong> Simplifies tax filing and compliance.</li>
-                            <li><strong>E-Way Bill & E-Invoice with Single Click:</strong> Automated document generation.</li>
-                            <li><strong>Custom Print Templates:</strong> Personalized invoicing for business needs.</li>
-                            <li><strong>WhatsApp & Email Integration:</strong> Send invoices and notifications effortlessly.</li>
-                            <li><strong>Audit Log & Admin Control:</strong> Track all activities and maintain security.</li>
-                        </ul>
-
-                        <p  ><strong>Technologies Used:</strong></p>
-                        <ul class="skills-icons"  >
-                            <li class="skill-li">
-                                <img src="https://cdn-icons-png.flaticon.com/128/174/174854.png" class="skill-icon">
-                                <p class="skill-name">HTML5</p>
-                            </li>
-                            <li class="skill-li">
-                                <img src="https://th.bing.com/th/id/OIP.yMEsQ5pCVMp4mARXDdgLnwHaHa?rs=1&amp;pid=ImgDetMain" class="skill-icon" style="background-color: black;">
-                                <p class="skill-name">Tailwind CSS</p>
-                            </li>
-                            <li class="skill-li">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" class="skill-icon">
-                                <p class="skill-name">Vue.js</p>
-                            </li>
-                          <li class="skill-li">
-                               <img src="https://w7.pngwing.com/pngs/595/864/png-transparent-typescript-original-logo-icon.png" alt="Mecanografiado, original, logo, icono, png | PNGWing" class="skill-icon">
-                               <p class="skill-name">TypeScript</p>
-                         </li>
-                        </ul>
-                        <p><strong>Duration:</strong> 11 Months</p>
-                        <!-- <a href="https://your-project-link.com" target="_blank" class="resume-btn">View Project</a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
+       
     </div>
 </div>
 
 <!-- Contact Section -->
+<h1 class="contact-title"><div class="company-section">
+    <h2>CONTACT</h2>
+    <div class="divider">
+        <span class="line"></span>
+        <span class="arrow">&#x25BC;</span>
+        <span class="line"></span>
+    </div>
+</div></h1>
+
 <div class="contact-section" id="Contact" style="color: #eae5e4; height: 300px; 
 background-image: url('https://moz.com/images/cms/top500-background-pattern.png?w=1920&h=354&auto=compress%2Cformat&fit=crop&dm=1633451445&s=a3d97f4e552471a3597db97fc4649090'); 
 background-size: cover; 
@@ -277,7 +383,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;">
-    <h1 class="contact-title">Contact Me</h1>
+   
     
     <p class="contact-info"><strong>Address:</strong> <br>
         6-13/b, Bayyavaram Village, Krosur Mandal,<br>
@@ -286,12 +392,12 @@ text-align: center;">
     </p>
     
     <p class="contact-info"><strong>Email:</strong> 
-        <a href="mailto:gowrasiva95@gmail.com" style="color: #ff5733;">gowrasiva95@gmail.com</a>
+        <a href="mailto:gowrasiva95@gmail.com" style="color: #e90c0c;">gowrasiva95@gmail.com</a>
     </p>
     <p class="contact-info"><strong>Phone:</strong> +91 9493958284</p>
     <div class="contact-icons">
-        <a href="https://www.linkedin.com/in/sivannarayana-gowra-b17798222/" style="color: #eee7e5;" target="_blank"><h6>Linkedin</h6><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/sivagowra" style="color: #f5efed;" target="_blank"><h6>GitHub</h6><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sivannarayana-gowra-b17798222/" style="color: #e40b0b;" target="_blank"><h6>Linkedin</h6><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/sivagowra" style="color: #eb0e0e;" target="_blank"><h6>GitHub</h6><i class="fab fa-github"></i></a>
         <a href="https://twitter.com/sivannarayana" target="_blank"><i class="fab fa-twitter"></i></a>
     </div>
 </div>
